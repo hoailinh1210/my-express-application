@@ -2,11 +2,11 @@ service: my-express-application
 
 provider:
   name: aws
-  runtime: nodejs8.11.4
+  runtime: nodejs6.10
   stage: dev
   region: ap-southeast-1
 
-function:
+functions:
   app:
     handler: index.handler
     events: 
